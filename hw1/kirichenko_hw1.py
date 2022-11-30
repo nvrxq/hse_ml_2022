@@ -8,8 +8,13 @@ Original file is located at
 
 # Машинное обучение
 ## Домашнее задание №1: KNN + Линейные модели
+"""
 
-**Срок сдачи:** 30 ноября 2021, 08:30 
+# Commented out IPython magic to ensure Python compatibility.
+# %%shell
+# jupyter nbconvert --to html /content/kirichenko_hw1.ipynb
+
+"""**Срок сдачи:** 30 ноября 2021, 08:30 
 
 **Максимально баллов:** 10 
 
@@ -152,10 +157,10 @@ my_clf = MyKNeighborsClassifier(n_neighbors=2, algorithm='kd_tree')
 X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.1, stratify=iris.target)
 
 # Commented out IPython magic to ensure Python compatibility.
-# %time clf.fit(X_train, y_train)
+# %timeit clf.fit(X_train, y_train)
 
 # Commented out IPython magic to ensure Python compatibility.
-# %time my_clf.fit(X_train, y_train)
+# %timeit my_clf.fit(X_train, y_train)
 
 # Commented out IPython magic to ensure Python compatibility.
 # %timeit clf.predict(X_test)
